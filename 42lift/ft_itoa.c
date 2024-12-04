@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbernier <mbernier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 17:07:07 by mbernier          #+#    #+#             */
-/*   Updated: 2024/10/23 17:07:07 by mbernier         ###   ########.fr       */
+/*   Created: 2024/12/03 16:26:37 by mbernier          #+#    #+#             */
+/*   Updated: 2024/12/03 16:26:37 by mbernier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static size_t	len_int(long n);
 
 char	*ft_itoa(int n)
 {
@@ -18,6 +20,7 @@ char	*ft_itoa(int n)
 	size_t	len;
 	long	nl;
 
+	nl = (long)n;
 	len = len_int(nl);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
