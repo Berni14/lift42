@@ -25,5 +25,5 @@ void	*ft_memchr(const void *str, int c, size_t size)
 			return (pstr + i);
 		i++;
 	}
-	return(NULL);
+	return (NULL);
 }
